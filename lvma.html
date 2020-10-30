@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">    
+
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9,user-scalable=0">
+    <title>验证结果</title>
+    <style type="text/css">
+		div{
+			line-height:50px;
+			text-align:center;
+			font-size:28px;
+		}
+	</style>
+
+ <script>
+function mytime(){
+var a = new Date();
+var b = a.getFullYear();
+var c = a.getMonth()+1;
+var d = a.getDate(); 
+var e = a.getHours();
+var f = a.getMinutes();
+document.getElementById("time").innerHTML ="当前时间是: "+c+"月"+d+"日"+" "+e+":"+f;
+}
+setInterval(function() {mytime()},1000);
+</script>  
+</head>
+
+<body style="margin:20px auto;width:90%" onload="reloadImg()">
+<div>您的进校验证结果</div>
+
+ <div style="color:#00AA00;">
+	<div><img id="headerPhoto" style="max-width:150px" src="https://s1.ax1x.com/2020/10/30/BYT3KU.png"></div>
+    <span>张网</span>
+    <br>
+    部门：<span>工学院</span>
+    <div style="color:#000000">原因:申请外出后回来</div>
+    <span>您可以进校</span>
+    <br><img src="https://s1.ax1x.com/2020/10/30/BYTgIA.jpg" style="width: 150px">
+</div>
+<div id="time" style="font-size: 20px">当前时间是: 10月30日 11:5</div>
+
+</body></html>
